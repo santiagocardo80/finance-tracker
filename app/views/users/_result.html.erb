@@ -7,7 +7,8 @@
                                     class: "btn btn-xs btn-success", method: :post %>
   </div>
 <% end %>
-
-<div class="results-block">
-  <%= bootstrap_flash %>
-</div>
+<% if params[:action] == "search" %>
+  <div class="results-block">
+    <%= bootstrap_flash %>
+  </div>
+<% end %>
